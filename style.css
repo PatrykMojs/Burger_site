@@ -1,0 +1,584 @@
+@import url('https://fonts.cdnfonts.com/css/redkost-comic');
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #fff;
+    font-family: 'Redkost Comic', sans-serif;
+    padding: 0%;
+    margin: 0;
+}
+
+.logo img{
+    width: 20%;
+    margin: 2vh 5vh;
+    float: left;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+}
+
+.logo img:hover{
+    animation: rotation 0.5s;
+    border-radius: 50%;
+}
+
+.menu_list{
+    float: right;
+    margin: 6vh 10vh;
+}
+
+.menu_list a{
+    margin-left: 5vh;
+    text-decoration: none;
+    color: #000;
+    font-size: 5vh;
+    border-bottom: 0.5vh solid #000;
+    border-radius: 0.9vh;
+    transition: all 0.3s ease-out;
+}
+
+.menu_list a:hover{
+    border-color: #DB8000;
+    color: #E8510C;
+}
+
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+.text-overlay{
+    position: absolute;
+    top: 20vh;
+    font-size: 7vh;
+    color: #fff;
+}
+
+.text-overlay h1{
+    width: 40%;
+    text-shadow: 0 0 3vh #000, 0 0 5vh #000;
+    margin-left: 15vh;
+    transition: all 0.5s ease-out;
+    cursor: default;
+}
+
+.text-overlay h1:hover{
+    color: #E8510C;
+}
+
+.text-overlay p{
+    width: 50%;
+    -webkit-text-stroke: 1px #000;
+    margin-left: 7vh;
+    border: 1vh solid #000;
+    border-radius: 10vh;
+    padding: 5vh;
+    background-color: #000;
+    opacity: 0.5;
+    transition: all 0.5s ease-out;
+    cursor: default;
+}
+
+.text-overlay p:hover{
+    opacity: 1;
+    color: #E8510C;
+
+}
+
+main{
+    width: 100%;
+    background-color: azure;
+}
+
+
+.box{
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 10vh;
+    padding-top: 20vh;
+    padding-bottom: 10vh;
+    background: linear-gradient(to top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+    background-color: #E8510C;
+}
+
+.title_main_burger_today{
+    margin-top: 15vh;
+    text-align: center;
+    font-size: 3vh;
+    text-decoration: underline;
+    transition: all 0.2s ease-out;
+    cursor: default;
+}
+
+.title_main_burger_today:hover{
+    color: #E8510C;
+    text-decoration: none;
+    font-size: 3.1vh;
+}
+
+.ingredients h3{
+    font-size: 3.5vh;
+}
+
+.ingredients p{
+    font-size: 2.5vh;
+}
+
+.box_one{
+    background-color: #F5E047;
+    border: 0.5vh solid #000;
+    border-radius: 1.5vh;
+    width: 30%;
+    height: 70vh;
+    margin-left: auto;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5); 
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.box_one:hover{
+    box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
+}
+
+.box_one img{
+    width: 100%;
+    height: 40vh;
+    border-radius: 1vh;
+}
+
+.box_two{
+    background-color: #F5E047;
+    border: 0.5vh solid #000;
+    border-radius: 1.5vh;
+    width: 30%;
+    height: 70vh;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5); 
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.box_two:hover{
+    box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
+}
+
+.box_two img{
+    width: 100%;
+    height: 40vh;
+    border-radius: 1vh;
+}
+
+.box_three{
+    background-color: #F5E047;
+    border: 0.5vh solid #000;
+    border-radius: 1.5vh;
+    width: 30%;
+    height: 70vh;
+    margin-right: auto;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5); 
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.box_three:hover{
+    box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
+}
+
+.box_three img{
+    width: 100%;
+    height: 40vh;
+    border-radius: 1vh;
+}
+
+.name_burger{
+    text-align: center;
+    font-size: 4vh;
+}
+
+.burger_ingredients{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text_menu h4{
+    color: #fff;
+    text-align: center;
+    font-size: 10vh;
+    padding: 10vh;
+    margin: 0 0;
+    text-decoration: underline;
+    transition: all 0.6s ease-out;
+    cursor: default;
+}
+
+.text_menu h4:hover{
+    color: #DEB01D;
+    text-shadow: 1vh 1vh 2vh black;
+}
+
+.menu{
+    width: 100%;
+    background: linear-gradient(to top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+    background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+    background-color: #E8510C;
+    margin-top: 0;
+}
+
+.row1{
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.burger_classic{
+    width: 50vh;
+    height: 70vh;
+    margin-left: auto;
+    background-color: #DB8000;
+    border: 0.5vh solid #000;
+    border-radius: 1vh;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.burger_classic:hover{
+    background-color: #3854F5;
+}
+
+.burger_cheese{
+    width: 50vh;
+    height: 70vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #DB8000;
+    border: 0.5vh solid #000;
+    border-radius: 1vh;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.burger_cheese:hover{
+    background-color: #DEB01D;
+}
+
+.burger_bacon{
+    width: 50vh;
+    height: 70vh;
+    margin-right: auto;
+    background-color: #DB8000;
+    border: 0.5vh solid #000;
+    border-radius: 1vh;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.burger_bacon:hover{
+    background-color: #782213;
+}
+
+.row2{
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.burger_doubleBeef{
+    width: 50vh;
+    height: 70vh;
+    margin-left: auto;
+    background-color: #DB8000;
+    border: 0.5vh solid #000;
+    border-radius: 1vh;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.burger_doubleBeef:hover{
+    background-color: #4D136B;
+}
+
+.burger_Red{
+    width: 50vh;
+    height: 70vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #DB8000;
+    border: 0.5vh solid #000;
+    border-radius: 1vh;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.burger_Red:hover{
+    background-color: #FF0000;
+}
+
+.burger_BBQ{
+    width: 50vh;
+    height: 70vh;
+    margin-right: auto;
+    background-color: #DB8000;
+    border: 0.5vh solid #000;
+    border-radius: 1vh;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.burger_BBQ:hover{
+    background-color: #8B0000;
+}
+
+.row3{
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.burger_onion{
+    width: 50vh;
+    height: 70vh;
+    margin-left: auto;
+    background-color: #DB8000;
+    border: 0.5vh solid #000;
+    border-radius: 1vh;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.burger_onion:hover{
+    background-color: #A3DCA5;
+}
+
+.burger_cheese2{
+    width: 50vh;
+    height: 70vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #DB8000;
+    border: 0.5vh solid #000;
+    border-radius: 1vh;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.burger_cheese2:hover{
+    background-color: #F5E047;
+}
+
+.burger_wege{
+    width: 50vh;
+    height: 70vh;
+    margin-right: auto;
+    background-color: #DB8000;
+    border: 0.5vh solid #000;
+    border-radius: 1vh;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.burger_wege:hover{
+    background-color: #28DE4F;
+}
+
+.row4{
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.text_snacks h4{
+    color: #fff;
+    text-align: center;
+    font-size: 10vh;
+    padding: 10vh;
+    margin: 0 0;
+    text-decoration: underline;
+    transition: all 0.6s ease-out;
+    cursor: default;
+}
+
+.text_snacks h4:hover{
+    color: #DEB01D;
+    text-shadow: 1vh 1vh 2vh black;
+}
+
+.snacks{
+    width: 100%;
+    background: linear-gradient(to top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+    background-color: #E8510C;
+    margin-top: 0;
+}
+
+#imgMenu img{
+    width: 100%;
+    height: 35vh;
+}
+
+.chips{
+    width: 50vh;
+    height: 65vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #DB8000;
+    border: 0.5vh solid #000;
+    border-radius: 1vh;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.chips:hover{
+    background-color: #b853f3; 
+}
+
+.onion_rings{
+    width: 50vh;
+    height: 65vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #DB8000;
+    border: 0.5vh solid #000;
+    border-radius: 1vh;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.onion_rings:hover{
+    background-color: #b853f3; 
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style: none;
+}
+
+.footer{
+    background-color: #000;
+    padding: 5% 0;
+}
+
+.footer-col{
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-col h4{
+   font-size: 18px;
+   color: #ffffff;
+   text-transform: capitalize;
+   margin-bottom: 30px;
+   font-weight: 500;
+   position: relative;
+   cursor: default;
+}
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 40%;
+ }
+
+.footer-col ul{
+    padding-left: 0%;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a{
+    display: inline-block;
+    height: 5vh;
+    width: 5vh;
+    background-color: rgba(255,255,255,0.2);
+    margin: auto auto;
+    line-height: 50%;
+    border-radius: 50%;
+    color: #ffffff;
+    transition:all 0.5s ease;
+}
+
+.footer-col .social-links a i{
+   margin: 1.5vh;
+}
+
+.footer-col .social-links a:hover{
+   color: #24262b;
+   background-color: #ffffff;
+}
+
+
+.button_burger_add{
+    background-color: #DB8000;
+    color: #ffffff;
+    font-family: 'Redkost Comic', sans-serif;
+    font-size: 2.5vh;
+    width: 40%;
+    height: 5vh;
+    border-radius: 3vh;
+    border: #000 solid 0.3vh;
+    float: right;
+    margin-right: 10%;
+    margin-top: auto;
+    margin-bottom: auto;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.button_burger_add:hover{
+    width: 42%;
+    height: 5.5vh;
+    color: #DB8000;
+    background-color: #000;
+}
